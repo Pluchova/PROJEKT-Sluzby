@@ -1,0 +1,161 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 28px;
+    margin:0;
+}
+h2{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.sekce{
+    font-size: 16px;
+    color: #8B8B8B;
+    font-weight: 300;
+}
+
+.card{
+    font-size: 13px;
+    font-weight: 300;
+    color:#8B8B8B ;
+    
+}
+
+.container{
+    width: 460px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+.tlacitka{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+     gap: 10px;
+   
+}
+.tlacitko{
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 11px 30px;
+    text-decoration: none;
+    width: fit-content;
+    display: inline-block;     
+    text-align: center;
+}
+.tlacitko-dobrodruzstvi{
+    
+background-color: #407BFF;
+}
+.tlacitko-plaz{
+background-color: #8B8B8B;
+}
+.logo{
+    margin: 60px 75px;
+}
+
+.card {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    
+    
+  }
+  
+  .card img {
+    width: 45px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  .text-blok p{
+        
+        font-size: 16px;
+        color:#8B8B8B;
+        font-weight: 300;
+        text-align: center;
+    
+  }
+  .card p {
+    margin: 0;
+    font-size: 13px;
+    color:#8B8B8B;
+    font-weight: 300;
+    text-align: left;
+  }
+
+  @media (min-width: 640px) {
+    body{
+        padding: 0 64px;
+    }
+    .tlacitka {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+       
+    }
+
+    .card {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        width: calc((100% - 40px) / 3);
+    }
+
+    .card p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dva-sloupce {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .sloupec {
+        flex: 0 0 calc((100% - 60px) / 2);
+    }
+
+    .sloupec-pravy
+    {
+        flex: 0 0 calc((100% - 60px) / 2);
+        order: 2;
+    }
+
+    .sloupec-levy{
+        flex: 0 0 calc((100% - 60px) / 2);
+        order: 1;
+    }
+}
+
+  
